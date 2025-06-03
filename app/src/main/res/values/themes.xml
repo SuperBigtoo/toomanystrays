@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TooManyStrays" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#FFABAB</item>
+        <item name="colorPrimaryVariant">#ED9595</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#EC8C8C</item>
+        <item name="colorSecondaryVariant">#E16363</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">#ED9595</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.TooManyStrays" parent="Base.Theme.TooManyStrays" />
+
+    <style name="Theme.TooManyStrays.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.TooManyStrays.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.TooManyStrays.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

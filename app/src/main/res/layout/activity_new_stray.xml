@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.NewStrayActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#FFC107"
+        android:theme="@style/Theme.TooManyStrays.AppBarOverlay">
+
+        <TextView
+            android:id="@+id/textNewStray_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Insert new Stray"
+            android:textAlignment="center"
+            android:textColor="#575252"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="620dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editNewStrayName"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="15dp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/custom_bg_pink"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Your Stray Name"
+                android:inputType="text"
+                android:padding="3dp"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:textColor="#575252"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textDetails_sub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="30dp"
+                android:text="Details"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck" />
+
+            <EditText
+                android:id="@+id/editNewStrayDetails"
+                android:layout_width="match_parent"
+                android:layout_height="122dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/custom_bg_pink"
+                android:ems="10"
+                android:focusable="true"
+                android:gravity="left|top"
+                android:hint="Your Pin Details"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="100dp"
+                android:textColor="#575252"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/texCategory_sub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Category Stray Tag"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/radioGroup">
+
+                <RadioButton
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:text="DOG"
+                    android:id="@+id/radio_button_1"/>
+
+                <RadioButton
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:text="CAT"
+                    android:id="@+id/radio_button_2"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/ImageSelect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="30dp"
+                android:layout_marginBottom="20dp"
+                android:text="Select Your Image From Device"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageNewStray"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:background="#00FFFFFF"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:shapeAppearanceOverlay="@style/RoundedSquare20p"
+                tools:srcCompat="@drawable/insert_pic" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="#66FFC107" >
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/buttonInsertStrayBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:contentDescription="button_back"
+            android:focusable="true"
+            android:src="@drawable/baseline_keyboard_return_24"
+            app:backgroundTint="#FAB5B5" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/buttonInsertNewStray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp"
+            android:clickable="true"
+            android:contentDescription="button_send_comment"
+            android:focusable="true"
+            android:src="@drawable/baseline_pets_24"
+            app:backgroundTint="#47C1F8" />
+
+    </RelativeLayout>
+
+</LinearLayout>

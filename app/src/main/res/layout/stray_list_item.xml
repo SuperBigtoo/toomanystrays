@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:background="@drawable/custom_bg_stray">
+
+    <TextView
+        android:id="@+id/strayName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:paddingBottom="10dp"
+        android:text="Meof Meof"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/strayDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/strayName"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:layout_marginBottom="5dp"
+        android:text="Meof Meof"
+        android:textSize="15sp" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageStray"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/strayDetail"
+        app:shapeAppearanceOverlay="@style/RoundedSquare20p"
+        tools:srcCompat="@drawable/logo_wakeup"/>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_height="2dp"
+        android:layout_below="@id/imageStray"
+        android:background="#8CA371" />
+
+</RelativeLayout>
